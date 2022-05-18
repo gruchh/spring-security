@@ -10,17 +10,8 @@ import org.springframework.context.event.EventListener;
 @SpringBootApplication
 public class SpringSecurityApplication {
 
-    @Autowired
-    private EmailService emailService;
-
     public static void main(String[] args) {
         SpringApplication.run(SpringSecurityApplication.class, args);
-    }
-
-    @EventListener(ApplicationReadyEvent.class)
-    public void sendMajl() {
-        emailService.sendMail();
-
     }
 
 }

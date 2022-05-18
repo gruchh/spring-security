@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.validation.Valid;
+import java.security.Principal;
 
 @Controller
 public class UserController {
@@ -19,18 +20,9 @@ public class UserController {
     }
 
     @GetMapping("/hello")
-    public String hello() {
+    public String hello(Principal principal, Model model) {
+        model.addAttribute("name", principal.getName());
         return "hello";
-    }
-
-    @GetMapping("/hello-user")
-    public String helloUser() {
-        return "hello-user";
-    }
-
-    @GetMapping("/hello-admin")
-    public String helloAdmin() {
-        return "hello-admin";
     }
 
     @GetMapping("/register")
