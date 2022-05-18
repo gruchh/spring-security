@@ -1,5 +1,7 @@
-package com.example.springsecurity;
+package com.example.springsecurity.Service;
 
+import com.example.springsecurity.Repository.UserRepository;
+import com.example.springsecurity.Model.User;
 import org.springframework.stereotype.Service;
 
 @Service

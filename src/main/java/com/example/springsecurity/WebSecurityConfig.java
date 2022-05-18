@@ -1,7 +1,7 @@
 package com.example.springsecurity;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.example.springsecurity.Service.UserDetailServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;

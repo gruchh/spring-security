@@ -1,5 +1,7 @@
-package com.example.springsecurity;
+package com.example.springsecurity.Controller;
 
+import com.example.springsecurity.Model.User;
+import com.example.springsecurity.Service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

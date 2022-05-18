@@ -1,8 +1,9 @@
 package com.example.springsecurity;
 
+import com.example.springsecurity.Model.User;
+import com.example.springsecurity.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
