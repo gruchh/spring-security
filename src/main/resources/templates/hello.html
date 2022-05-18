@@ -5,7 +5,15 @@
     <title>Title</title>
 </head>
 <body>
-<h1>HELLO <span th:text="${name}"></span></h1>
-<a>REGISTER</a>
+<h1>HELLO <span th:text="${name}"/></h1>
+<h1>SESSION: <span th:text="${details.SessionId}"/></h1>
+<h1>YOUR ROLE</h1>
+<table>
+    <th:block th:each="auth : ${authorities}">
+        <tr>
+            <td th:text="${auth}">...</td>
+        </tr>
+    </th:block>
+</table>
 </body>
 </html>
